@@ -2,7 +2,18 @@
 
 Exemplo de como usar o Elasticpush para gerar notificações HTML5 em seu site.
 
-## Código
+## Exemplo de chamada pelo backend
+<pre >
+<code class="bash" >
+curl -HContent-Type:application/json \
+-HX-Token:15f80686c2cd6a75f1eac18de966e35dd35cf649ac730999e0bc34bc1e013b5e \
+-HX-Secret-Token:197fbd50835cfb0ccb892e03b1af3c496a87cbc26cdc864a2f1ba50b7a2c46c1 \
+-d '{"channel": "elasticpush-test","identifier":"<span id="clientId"></span>","event":"event-test","data":{"message":"Hello world!"}}' \
+"https://api.elasticpush.com/v1/apps/63/events"
+</code>
+</pre>
+
+##  No frontend
 <pre><code>
 if(!Notification){
     alert('Seu browser não suporta notificações!');
