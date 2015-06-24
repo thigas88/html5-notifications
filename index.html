@@ -29,7 +29,7 @@ curl -HContent-Type:application/json \
         getPermission();
     }
     /**
-     * Ask the user for desktop notification permissions (if needed)
+     * Pergunta pro usuário se ele permite o seu app usar as notificações
      */
     function getPermission() {
         if (Notification.permission != 'granted') {
