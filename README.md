@@ -1,8 +1,8 @@
 # Notificações HTML5 em tempo real
 
-Exemplo de como usar o Elasticpush para gerar notificações HTML5 em seu site.
+Demostração de como utilizar Elasticpush para gerar notificações HTML5 em seu site.
 
-## Exemplo de chamada pelo backend
+### Exemplo de chamada pelo backend
 <pre >
 <code class="bash" >
 curl -HContent-Type:application/json \
@@ -13,7 +13,7 @@ curl -HContent-Type:application/json \
 </code>
 </pre>
 
-##  No frontend
+###  No frontend
 <pre><code>
 if(!Notification){
     alert('Seu browser não suporta notificações!');
